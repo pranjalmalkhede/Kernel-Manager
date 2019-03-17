@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:shortcutId="settings"
+        android:shortcutLongLabel="@string/open_settings"
+        android:shortcutShortLabel="@string/settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.android.kernelmanager.activities.MainActivity"
+            android:targetPackage="com.android.kernelmanager">
+            <extra
+                android:name="section"
+                android:value="com.android.kernelmanager.fragments.other.SettingsFragment" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
+
